@@ -1,19 +1,17 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <search />
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-var webcall = axios.create({
-        baseURL: 'api',
-        timeout: 20000,
-        withCredentials: false,
-        headers: { 'Content-Type': 'application/json' }
-    });
+import search from '../components/search.vue'
 export default {
-  
+  components: {
+    search
+  },
+  mounted () {
+  }
 }
 </script>
