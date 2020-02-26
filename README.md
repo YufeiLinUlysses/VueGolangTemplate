@@ -2,6 +2,12 @@
 
 This is a template for creating golang backend and a vue frontend and we have python as another backend tool for data analysis and web scraping on a linux server. All the parts are very carefully documented and explained.
 
+To run 
+
+```
+~\src\view$ npm install
+```
+
 ## Golang Backend
 ### Goal
 Create a blockchain server at the backend to provide encrypted communication and file transfer
@@ -15,7 +21,7 @@ Create a blockchain server at the backend to provide encrypted communication and
 * Create a blockchain service
 * User authentication
 
-## Python scripts
+## Python scripts (Python 3.7.x+)
 
 ### Goal
 To do data analysis and machine learning fast, potentially run on the server side as a linux crontab
@@ -28,7 +34,7 @@ To do data analysis and machine learning fast, potentially run on the server sid
 * Machine learning examples
 * Web Scraping
 
-## Vue projects
+## Vue projects (Vue CLI 2.6.11+)
 
 ### Goal
 This is the front view part of the web page, predominantly used to satisfy user interaction
