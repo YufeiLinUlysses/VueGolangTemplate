@@ -6,13 +6,14 @@
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import axios from 'axios'
+var webcall = axios.create({
+        baseURL: 'api',
+        timeout: 20000,
+        withCredentials: false,
+        headers: { 'Content-Type': 'application/json' }
+    });
 export default {
-  name: 'Home',
-  components: {
-    HelloWorld
-  }
+  
 }
 </script>
