@@ -34,7 +34,7 @@ To do data analysis and machine learning fast, potentially run on the server sid
 * Machine learning examples
 * Web Scraping
 
-## Vue projects (Vue CLI 2.6.11+)
+## Vue projects (Vue CLI 2.6.11+, Latest Vue-Cli)
 
 ### Goal
 This is the front view part of the web page, predominantly used to satisfy user interaction
