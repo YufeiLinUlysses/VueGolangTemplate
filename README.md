@@ -4,7 +4,8 @@ This is a template for creating golang backend and a vue frontend and we have py
 
 To run 
 
-```
+``` bash
+#front end js
 ~\src\view$ npm install
 ```
 
