@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+  <!-- router-view provides a place for people to look at the views after routing -->
     <router-view/>
   </div>
 </template>
