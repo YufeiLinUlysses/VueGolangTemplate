@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Example: 5e5535be9f0a1ceabc5a8f4c</h1>
+        <h1>Example: 5e5e79d4661ace168d5ab66d</h1>
         <input
         type="text"
         v-model="searchquest.id"
@@ -12,7 +12,7 @@
 <script>
 import axios from 'axios'
 
-//Set up an axios instance
+// Set up an axios instance
 var webcall = axios.create({
   baseURL: 'http://localhost:12345/',
   timeout: 20000,
@@ -21,7 +21,7 @@ var webcall = axios.create({
 })
 
 export default {
-  //Set up data for the component
+  // Set up data for the component
   data: function() {
     return {
       results: [],
@@ -29,7 +29,7 @@ export default {
     }
   },
   methods: {
-    //Defin the function search
+    // Defin the function search
     search: function() {
       var vm = this
       var quest = vm.searchquest
@@ -38,7 +38,7 @@ export default {
       webcall.get(url)
         .then(function (response) {
           console.log(response.data)
-          //Push the app to a second view
+          // Push the app to a second view
           vm.$router.push({
             name: 'result',
             params: {

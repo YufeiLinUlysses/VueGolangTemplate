@@ -36,7 +36,7 @@ func CreatePersonEndpoint(response http.ResponseWriter, request *http.Request) {
 	json.NewDecoder(request.Body).Decode(&person)
 
 	//Connect to the database
-	collection := client.Database("thepolyglotdeveloper").Collection("people")
+	collection := client.Database("test1").Collection("people")
 
 	//Hold the resources and release once finished
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
@@ -57,7 +57,7 @@ func GetPeopleEndpoint(response http.ResponseWriter, request *http.Request) {
 	var people []Person
 
 	//Connects to the database
-	collection := client.Database("thepolyglotdeveloper").Collection("people")
+	collection := client.Database("test1").Collection("people")
 
 	//Hold the resources and release once finished
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
@@ -99,7 +99,7 @@ func GetPersonEndpoint(response http.ResponseWriter, request *http.Request) {
 	var person Person
 
 	//Connect to the database
-	collection := client.Database("thepolyglotdeveloper").Collection("people")
+	collection := client.Database("test1").Collection("people")
 
 	//Hold the resource and release once finished
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
